@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nvidia-smi:*)",
+      "Bash(ollama list:*)",
+      "Bash(echo $OLLAMA_HOST)",
+      "Bash(ollama show:*)",
+      "Bash(ollama ps:*)",
+      "Bash(python:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

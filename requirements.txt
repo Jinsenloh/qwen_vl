@@ -1,0 +1,4 @@
+ollama>=0.3.0
+requests>=2.31.0
+Pillow>=10.0.0
+# base64 and json are built-in Python modules, no installation needed
