@@ -138,9 +138,8 @@ Now classify this new image following the same format:"""
         messages = []
 
         # Example images from your dataset
-        example_sit = r"c:\Users\jinse\Documents\coding\qwen_vl\data\02-reading-chair-ideas-homebnc.jpg"
-        example_walk = r"c:\Users\jinse\Documents\coding\qwen_vl\data\brisk-walking.jpg"
-
+        example_sit = "/mnt/ext-data/qwen_vl/data/02-reading-chair-ideas-homebnc.jpg"
+        example_walk = "/mnt/ext-data/qwen_vl/data/brisk-walking.jpg"
         # System prompt with examples
         messages.append({
             'role': 'user',
@@ -295,7 +294,8 @@ Here are examples:"""
         Test the activity classification with sample images
         """
         test_images = [
-            r"c:\Users\jinse\Documents\coding\qwen_vl\data\download.jpg", 
+            "/mnt/ext-data/qwen_vl/data/download.jpg", 
+        
         ]
 
         print("=== Activity Classification Test ===")
@@ -360,7 +360,7 @@ if __name__ == "__main__":
     print("INDIVIDUAL TEST EXAMPLE:")
     print("="*50)
 
-    single_image = r"c:\Users\jinse\Documents\coding\qwen_vl\data\brisk-walking.jpg"
+    single_image = "/mnt/ext-data/qwen_vl/data/brisk-walking.jpg"
     result = qwen_vl.classify_activity(single_image)
 
     if "error" not in result:
